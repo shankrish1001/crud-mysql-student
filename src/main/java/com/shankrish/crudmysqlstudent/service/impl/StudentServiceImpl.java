@@ -3,19 +3,16 @@ package com.shankrish.crudmysqlstudent.service.impl;
 import com.shankrish.crudmysqlstudent.entity.Student;
 import com.shankrish.crudmysqlstudent.repository.StudentRepository;
 import com.shankrish.crudmysqlstudent.service.StudentService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@AllArgsConstructor
 @Service
 public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
-
-    @Autowired
-    public StudentServiceImpl(StudentRepository studentRepository) {
-        this.studentRepository = studentRepository;
-    }
 
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
