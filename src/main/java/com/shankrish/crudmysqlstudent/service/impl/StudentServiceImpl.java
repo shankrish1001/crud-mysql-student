@@ -4,7 +4,6 @@ import com.shankrish.crudmysqlstudent.entity.Student;
 import com.shankrish.crudmysqlstudent.repository.StudentRepository;
 import com.shankrish.crudmysqlstudent.service.StudentService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
