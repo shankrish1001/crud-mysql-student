@@ -16,6 +16,7 @@ department VARCHAR(100),
 salary DECIMAL(10,2)
 );
 
+
 DELIMITER //
 CREATE PROCEDURE GetEmployeesByDepartment(IN dept VARCHAR(100))
 BEGIN
@@ -24,4 +25,6 @@ END //
 DELIMITER ;
 
 
+SHOW PROCEDURE STATUS WHERE Db = 'student_db';
 
+CALL GetEmployeesByDepartment('IT');
