@@ -28,3 +28,9 @@ DELIMITER ;
 SHOW PROCEDURE STATUS WHERE Db = 'student_db';
 
 CALL GetEmployeesByDepartment('IT');
+
+
+http://localhost:8080/swagger-ui/index.html
+
+
+
